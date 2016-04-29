@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Previsao:</strong>
+  <%= @previsao.previsao %>
+</p>
+
+<p>
+  <strong>Ativo:</strong>
+  <%= @previsao.ativo %>
+</p>
+
+<p>
+  <strong>Frequencia:</strong>
+  <%= @previsao.frequencia %>
+</p>
+
+<%= link_to 'Edit', edit_previsao_path(@previsao) %> |
+<%= link_to 'Back', previsaos_path %>

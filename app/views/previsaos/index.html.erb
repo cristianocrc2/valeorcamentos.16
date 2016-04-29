@@ -1,0 +1,29 @@
+<h1>Listing previsaos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Previsao</th>
+      <th>Ativo</th>
+      <th>Frequencia</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @previsaos.each do |previsao| %>
+      <tr>
+        <td><%= previsao.previsao %></td>
+        <td><%= previsao.ativo %></td>
+        <td><%= previsao.frequencia %></td>
+        <td><%= link_to 'Show', previsao %></td>
+        <td><%= link_to 'Edit', edit_previsao_path(previsao) %></td>
+        <td><%= link_to 'Destroy', previsao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Previsao', new_previsao_path %>
