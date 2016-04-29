@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Subcategoria:</strong>
+  <%= @subcategorium.subcategoria %>
+</p>
+
+<p>
+  <strong>Ativo:</strong>
+  <%= @subcategorium.ativo %>
+</p>
+
+<p>
+  <strong>Categoria:</strong>
+  <%= @subcategorium.categoria %>
+</p>
+
+<%= link_to 'Edit', edit_subcategorium_path(@subcategorium) %> |
+<%= link_to 'Back', subcategoria_path %>
