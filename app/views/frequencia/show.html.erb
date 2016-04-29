@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Frequencia:</strong>
+  <%= @frequencium.frequencia %>
+</p>
+
+<p>
+  <strong>Ativo:</strong>
+  <%= @frequencium.ativo %>
+</p>
+
+<p>
+  <strong>Subcategoria:</strong>
+  <%= @frequencium.subcategoria %>
+</p>
+
+<%= link_to 'Edit', edit_frequencium_path(@frequencium) %> |
+<%= link_to 'Back', frequencia_path %>

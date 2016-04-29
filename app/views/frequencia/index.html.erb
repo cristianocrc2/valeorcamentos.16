@@ -1,0 +1,29 @@
+<h1>Listing frequencia</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Frequencia</th>
+      <th>Ativo</th>
+      <th>Subcategoria</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @frequencia.each do |frequencium| %>
+      <tr>
+        <td><%= frequencium.frequencia %></td>
+        <td><%= frequencium.ativo %></td>
+        <td><%= frequencium.subcategoria %></td>
+        <td><%= link_to 'Show', frequencium %></td>
+        <td><%= link_to 'Edit', edit_frequencium_path(frequencium) %></td>
+        <td><%= link_to 'Destroy', frequencium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Frequencium', new_frequencium_path %>

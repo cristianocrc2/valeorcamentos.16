@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :frequencia
+
   resources :categoria
 
   resources :nichos
